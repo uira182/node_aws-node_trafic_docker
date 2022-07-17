@@ -1,10 +1,16 @@
 ## DOCKER - NODEJS - TRAFIC - AWS
 
+- Install nodeJs: https://nodejs.org/en/
+- Install Yarn: https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable
+- Install docker: https://docs.docker.com/ 
+- Run code: yarn init -y
+- Run code: yarn add express
+
 ## 1º AWS INSTALL AND CONFIGURE
 - Install aws cli: https://aws.amazon.com/pt/cli/
 - Run code: aws configure
 - Fill in the information
-- open port: 80 and 8080.
+- Open port: 80 and 8080.
 
 ## 2º DOCKER-MACHINE INSTALL AND CONFIGURE
 - Install docker-machine: https://docs.docker.com/desktop/
@@ -18,13 +24,13 @@ Now we are directly connected to aws and all commands will run in our instance.
  - ./docker-production.yml - fill in your domain
 
 ## RUN APP
-- run code: docker-compose up - to test and enter in the your site http://yourdomain.com:3000
-- to exit press [ ctrl ] + [ c ]
-- run code: docker-compose -f docker-compose.yml -f docker-production.yml up -d
-- run code: docker ps - to view your running container
+- Run code: docker-compose up - to test and enter in the your site http://yourdomain.com:3000
+- To exit press [ ctrl ] + [ c ]
+- Run code: docker-compose -f docker-compose.yml -f docker-production.yml up -d
+- Run code: docker ps - to view your running container
 
 ## TERMINAL EXIT AWS
-- run code: eval $(docker-machine env -u)
+- Run code: eval $(docker-machine env -u)
 
 
 
